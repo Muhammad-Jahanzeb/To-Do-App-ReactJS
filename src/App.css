@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  margin:0;
+  padding:0;
+  background-color: rgb(112, 22, 196);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.todo-wrapper{
+  width:40%;
+  height:40vh;
+  background-color: rgb(41, 9, 71);
+  border-radius: 10px;
+  margin-left: 25%;
+  margin-top: 50px;
+  padding:6%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-input{
+  border:1px solid white;
+  font-size: 12px;
+  color: white;
+  height: auto;
+  width: 65%;
+  padding: 2%;
+}
+
+.todo-btn{
+  border: none;
+  background-color: rgb(89, 27, 148);
+  color: white;
+  letter-spacing: 2px;
+  height: auto;
+  margin-right: 1.5%;
+  padding: 2%;
+  font-size: 0.9rem;
+  width: 8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo-btn:hover{
+  transform: scale(1.1);
+  background-color: rgb(131, 72, 187);
+}
+
+.todo-form{
+  display: flex;
+  margin-top: 3%;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+}
+
+.todo-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  background-color: rgb(89, 27, 148);
+  border-radius: 10px;
+  margin-top: 2%;
+  transition: 0.3s;
+  width: 90%;
+}
+
+.todo-item:hover{
+  background-color: rgb(131, 72, 187);
+}
+
+h1{
+  background-color: transparent;
+}
+
+.not-done{
+  background-color: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.done{
+   background-color: transparent;
+  color: rgb(194, 194, 187);
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.icons{
+  background-color: transparent;
+  align-items: center;
+  display: flex;
+  width: 10%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+::placeholder{
+  color: white;
+  font-size: 12px;
+}
+
+.mini-container{
+  background-color: transparent;
+  margin-top: 6%;
+  height: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:rgb(112, 22, 196); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(131, 72, 187); 
 }
